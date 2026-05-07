@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A82E"/>
+      <stop offset="50%" stop-color="#A8801C"/>
+      <stop offset="100%" stop-color="#6B4F0E"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE89F" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#E8C547" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bgGrad" cx="50%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#FCF7E8"/>
+      <stop offset="100%" stop-color="#F5EBC9"/>
+    </radialGradient>
+    <filter id="ds" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="b"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.4"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="512" rx="115" ry="115" fill="url(#bgGrad)"/>
+  <rect x="24" y="24" width="464" height="464" rx="98" ry="98" fill="none" stroke="#A8801C" stroke-width="3" opacity="0.5"/>
+
+  <!-- M&M Monogram - properly sized to fit -->
+  <g transform="translate(256, 270)" filter="url(#ds)">
+    <text x="0" y="0" text-anchor="middle" dominant-baseline="middle"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-style="italic" font-weight="700" font-size="170"
+          fill="url(#goldGrad)">M&amp;M</text>
+    <text x="0" y="0" text-anchor="middle" dominant-baseline="middle"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-style="italic" font-weight="700" font-size="170"
+          fill="url(#goldShine)">M&amp;M</text>
+  </g>
+
+  <g transform="translate(256, 130)" stroke="#A8801C" fill="none" stroke-linecap="round">
+    <path d="M -70 0 Q -35 -12 0 0 Q 35 -12 70 0" stroke-width="3.5"/>
+    <circle cx="0" cy="-3" r="4" fill="#A8801C" stroke="none"/>
+  </g>
+
+  <g transform="translate(256, 415)">
+    <text x="0" y="0" text-anchor="middle"
+          font-family="Georgia, serif" font-style="italic"
+          font-size="44" font-weight="700"
+          fill="url(#goldGrad)" letter-spacing="4">CLEANSE</text>
+    <path d="M -80 22 Q -40 14 0 22 Q 40 14 80 22" stroke="#A8801C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g fill="#C99A2E">
+    <path d="M 95 105 L 101 87 L 107 105 L 125 111 L 107 117 L 101 135 L 95 117 L 77 111 Z" opacity="0.9"/>
+    <path d="M 397 95 L 402 81 L 407 95 L 421 100 L 407 105 L 402 119 L 397 105 L 383 100 Z" opacity="0.85"/>
+    <path d="M 88 410 L 92 400 L 96 410 L 106 414 L 96 418 L 92 428 L 88 418 L 78 414 Z" opacity="0.85"/>
+    <path d="M 415 415 L 420 401 L 425 415 L 439 420 L 425 425 L 420 439 L 415 425 L 401 420 Z" opacity="0.9"/>
+  </g>
+</svg>
