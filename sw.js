@@ -1,13 +1,16 @@
 /* M&M Cleanse — Service Worker
  * Strategy: cache-first for static assets, network-first for HTML
  */
-const CACHE_VERSION = 'mmcleanse-v1.1.0';
+const CACHE_VERSION = 'mmcleanse-v1.3.0';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
 const STATIC_ASSETS = [
   './',
   './index.html',
+  './privacy.html',
+  './terms.html',
+  './accessibility.html',
   './manifest.webmanifest',
   './favicon.svg',
   './favicon.ico',
@@ -15,6 +18,8 @@ const STATIC_ASSETS = [
   './og-image-square.png',
   './og-image-vertical.png',
   './mm-cleanse.vcf',
+  './media/',
+  './media/index.html',
   './icons/apple-touch-icon.png',
   './icons/android-chrome-192x192.png',
   './icons/android-chrome-512x512.png',

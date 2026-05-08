@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fcf7e8">
+<title>Accessibility Statement — M&amp;M Cleanse</title>
+<meta name="description" content="M&M Cleanse's commitment to digital accessibility. Last reviewed May 2026.">
+<link rel="canonical" href="https://mmcleanse.com/accessibility.html">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
+<style>
+:root{
+  --white:#fff; --cream:#fcf7e8; --ivory:#f8f3df;
+  --gold-soft:#e8c547; --gold:#c99a2e; --gold-deep:#a8801c; --gold-dark:#7a5816;
+  --ink:#1a1408; --ink-soft:#3d3320; --muted:#8b7d5c;
+  --line:rgba(168,128,28,.18);
+  --gold-gradient:linear-gradient(135deg,#f5e6a8 0%,#e8c547 30%,#c99a2e 60%,#7a5816 100%);
+  --bg-gradient:radial-gradient(circle at 20% 0%,#fffaeb 0%,#fcf7e8 35%,#f8f3df 100%);
+  --glass-strong:rgba(252,247,232,.86);
+  --shadow-gold:0 6px 20px rgba(168,128,28,.32);
+  --r-md:14px; --r-lg:20px; --r-full:9999px;
+  --easing:cubic-bezier(.32,.72,0,1);
+  --safe-top:env(safe-area-inset-top,0px);
+  --font-display:"Cormorant Garamond","Times New Roman",Georgia,serif;
+  --font-ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
+}
+*,::before,::after{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:var(--font-ui);color:var(--ink);background:var(--bg-gradient);background-attachment:fixed;min-height:100dvh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:var(--gold-deep);transition:color .2s var(--easing)}
+a:hover{color:var(--gold-dark)}
+.app-bar{position:fixed;top:0;left:0;right:0;z-index:100;padding-top:var(--safe-top);background:var(--glass-strong);-webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);border-bottom:.5px solid var(--line)}
+.app-bar-inner{max-width:880px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand-mark{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand-mark img{width:42px;height:42px;border-radius:10px}
+.brand-text{font-family:var(--font-display);font-style:italic;font-weight:700;font-size:22px;line-height:1;background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.brand-sub{font-family:var(--font-display);font-size:10px;letter-spacing:.18em;color:var(--gold-deep);text-transform:uppercase;margin-top:2px;display:block}
+.home-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:var(--r-full);background:var(--gold-gradient);color:#fff;font-weight:600;font-size:14px;text-decoration:none;box-shadow:var(--shadow-gold)}
+.home-btn:hover{color:#fff;transform:translateY(-1px)}
+@media (max-width:359px){
+  .brand-sub{display:none}.brand-text{font-size:19px}
+  .home-btn{padding:8px 12px;font-size:13px}.home-btn span{display:none}
+}
+main{max-width:780px;margin:0 auto;padding:calc(80px + var(--safe-top)) 22px 80px}
+.legal-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);padding:8px 16px;border-radius:var(--r-full);background:var(--ivory);border:.5px solid var(--line);margin-bottom:18px}
+h1{font-family:var(--font-display);font-style:italic;font-size:clamp(36px,6vw,56px);line-height:1.1;font-weight:700;margin:0 0 12px;background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.01em}
+.last-updated{font-family:var(--font-display);font-style:italic;color:var(--muted);font-size:15px;margin:0 0 40px}
+h2{font-family:var(--font-display);font-style:italic;font-size:clamp(22px,3vw,30px);font-weight:700;color:var(--ink);margin:36px 0 12px;letter-spacing:-.005em}
+p{font-size:16px;line-height:1.7;color:var(--ink-soft);margin:0 0 14px}
+ul{padding-left:22px;margin:0 0 14px}
+li{font-size:16px;line-height:1.7;color:var(--ink-soft);margin-bottom:6px}
+strong{color:var(--ink);font-weight:600}
+.contact-card{margin-top:48px;padding:24px 26px;background:var(--white);border:.5px solid var(--line);border-radius:var(--r-lg)}
+.contact-card h3{font-family:var(--font-display);font-style:italic;font-size:22px;font-weight:700;color:var(--ink);margin:0 0 8px}
+.contact-card p{margin:0;font-size:15px}
+.contact-card a{font-weight:600}
+footer{text-align:center;padding:40px 24px;color:var(--muted);font-size:13px;border-top:.5px solid var(--line);margin-top:40px}
+footer a{color:var(--gold-deep);margin:0 6px}
+</style>
+</head>
+<body>
+
+<header class="app-bar">
+  <div class="app-bar-inner">
+    <a class="brand-mark" href="./">
+      <img src="icons/apple-touch-icon-114x114.png" alt="M&M Cleanse logo">
+      <div>
+        <div class="brand-text">M&amp;M Cleanse</div>
+        <span class="brand-sub">Accessibility</span>
+      </div>
+    </a>
+    <a class="home-btn" href="./">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+      <span>Home</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="legal-eyebrow">Legal · Accessibility</div>
+  <h1>Accessibility Statement</h1>
+  <p class="last-updated">Last reviewed: May 7, 2026</p>
+
+  <p>M&amp;M Cleanse believes everyone should be able to learn about and book our services without barriers. We are committed to making this website accessible to people with disabilities and improving usability for everyone.</p>
+
+  <h2>What We've Done</h2>
+  <ul>
+    <li>Built the site to <strong>WCAG 2.1 Level AA</strong> guidelines as a target standard.</li>
+    <li>All images include descriptive alt text.</li>
+    <li>Headings, lists, and landmarks (header, nav, main, footer) are properly structured for screen-reader navigation.</li>
+    <li>Color contrast meets or exceeds 4.5:1 for body text and 3:1 for large text.</li>
+    <li>The site is keyboard-navigable end to end. A "skip to main content" link is provided for users who don't use a pointing device.</li>
+    <li>Focus indicators are visible on all interactive elements.</li>
+    <li>The site supports the system <code>prefers-reduced-motion</code> setting — animations and transitions are minimized when that preference is set.</li>
+    <li>Works at zoom levels up to 200% without loss of content or functionality.</li>
+    <li>Compatible with screen readers including VoiceOver (iOS/macOS), TalkBack (Android), JAWS, and NVDA.</li>
+    <li>Touch targets meet or exceed the recommended 44×44 pt minimum size.</li>
+  </ul>
+
+  <h2>Known Limitations</h2>
+  <p>We're continuously improving. If you find anything that doesn't work for you, please let us know — we treat accessibility issues as bugs and prioritize them.</p>
+
+  <h2>In-Person Accessibility</h2>
+  <p>If you need accommodations for an in-person service — for example, a specific scheduling window, a quieter cleaning approach, fragrance-free products, or communication via text only — please tell us when booking. We'll do our best to make it work.</p>
+
+  <h2>How to Reach Us</h2>
+  <p>If you have trouble using any part of this website or our services, we want to hear about it. We'll work with you to provide the information, service, or experience you need.</p>
+
+  <div class="contact-card">
+    <h3>Report an Accessibility Issue</h3>
+    <p>Email <a href="mailto:Mmcleanse@yahoo.com?subject=Accessibility%20Feedback">Mmcleanse@yahoo.com</a>, call or text <a href="tel:+15707061413">(570) 706-1413</a>. We aim to respond within two business days.</p>
+  </div>
+</main>
+
+<footer>
+  <p>M&amp;M Cleanse · Wilkes-Barre, PA · <a href="./">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+</footer>
+
+</body>
+</html>

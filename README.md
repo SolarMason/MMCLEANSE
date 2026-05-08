@@ -20,6 +20,33 @@ mm-cleanse/
 ├── og-image-square.png     ← Square share card (1080×1080) — iMessage, WhatsApp, Telegram, Signal, Instagram
 ├── og-image-vertical.png   ← Vertical share card (1080×1350) — Pinterest pin format
 ├── mm-cleanse.vcf          ← Digital business card (Save to Contacts on iOS/Android)
+├── privacy.html            ← Privacy Policy page
+├── terms.html              ← Terms of Service page
+├── accessibility.html      ← Accessibility Statement page
+├── media/                  ← Marketing collateral hub
+│   ├── index.html          ← Gallery page with category filters + previews + downloads
+│   ├── pdfs/               ← 20 print-ready branded PDFs
+│   │   ├── 01-business-card.pdf      (3.5×2 in, front + back)
+│   │   ├── 02-door-hanger.pdf        (4×11 in)
+│   │   ├── 03-trifold-brochure.pdf   (11×8.5 in, 6 panels)
+│   │   ├── 04-flyer-general.pdf      (letter, all-purpose)
+│   │   ├── 05-pricing-sheet.pdf      (letter, service rates)
+│   │   ├── 06-postcard.pdf           (6×4 in, direct mail)
+│   │   ├── 07-referral-thank-you.pdf (5×7 in, front + back)
+│   │   ├── 08-yard-sign.pdf          (24×18 in, jobsite sign)
+│   │   ├── 09-car-magnet.pdf         (12×4 in, vehicle door)
+│   │   ├── 10-gift-certificate.pdf   (8.5×3.5 in, fillable)
+│   │   ├── 11-mothers-day.pdf        ($300 whole-house clean)
+│   │   ├── 12-spring-cleaning.pdf    (20% off deep cleans)
+│   │   ├── 13-fall-prep.pdf          ($50 off first recurring)
+│   │   ├── 14-holiday-season.pdf     (pre-holiday deep clean)
+│   │   ├── 15-new-year.pdf           (first clean half off)
+│   │   ├── 16-valentines.pdf         ($25 off deep clean)
+│   │   ├── 17-realtor-partnership.pdf
+│   │   ├── 18-airbnb-host.pdf
+│   │   ├── 19-move-in-out.pdf
+│   │   └── 20-post-construction.pdf
+│   └── thumbs/             ← Preview PNGs displayed in the gallery
 └── icons/                  ← Full Apple/Android/PWA/MS icon set
     ├── apple-touch-icon-{57,60,72,76,114,120,144,152,167,180}.png
     ├── apple-touch-icon.png (default 180×180)
@@ -101,20 +128,70 @@ There are **no placeholder links and no JS handlers that go nowhere.** Every int
 - ✅ iOS-style bottom tab bar on mobile (Home / Services / Call / Text / Quote)
 - ✅ Glassmorphism cards, soft shadows, rounded iOS corner radii
 - ✅ Cormorant Garamond display + Italianno script accents
-- ✅ Promo strip (dismissible, sessionStorage-backed) for Mother's Day — easy to swap for any future promo
 - ✅ Subtle gold sparkle accents and gentle reveal animations
 
 ---
 
-## Updating the Mother's Day promo later
+## Media Hub (`/media/`)
 
-The Mother's Day campaign is intentionally NOT the centerpiece — the site is about the brand, not the promo. To swap it:
+A complete marketing collateral library with **20 print-ready, fully branded PDFs**, accessible at `mmcleanse.com/media/`.
 
-1. **Top promo strip:** Edit the text inside `<aside class="promo-strip">` in `index.html`.
-2. **Promo card section:** Edit the contents of `<section id="promo">` — change the `$300`, the headline, and the bullet points.
-3. **Form chip:** Update the "Mother's Day Sale" `<label class="chip">` checkbox to match the new promo name.
+**Categories:**
+- **Essentials (10)** — Business card, door hanger, tri-fold brochure, general flyer, pricing sheet, postcard, referral/thank-you, yard sign, car magnet, gift certificate
+- **Holiday Specials (6)** — Mother's Day, Spring Cleaning, Fall Prep, Holiday Season, New Year, Valentine's Day. Each has a unique offer copy and dollar amount.
+- **Vertical / B2B (4)** — Realtor Partnership, Airbnb Hosts, Move In/Out, Post-Construction
 
-To remove the promo entirely, delete the `<aside class="promo-strip">` block and the `<section id="promo">` block. Nothing else depends on them.
+**Page features:**
+- Category filter pills (All / Essentials / Direct Mail / Signs & Vehicle / Holiday Specials / Vertical / B2B)
+- Preview thumbnail on each card (rendered from the PDF first page; **double-sided items show both pages**)
+- "Preview" button (opens PDF in a new tab) and "Download" button (forces download)
+- "Need something custom?" CTA at the bottom for custom variations
+- The Media Hub is reachable from the **mobile bottom tab bar** AND **desktop top nav** — one tap from any page.
+
+**Sending one to a customer:** the URL pattern is `mmcleanse.com/media/pdfs/{filename}.pdf`. So the Mother's Day flyer is at `mmcleanse.com/media/pdfs/11-mothers-day.pdf` — that single link works in iMessage, email, Facebook, etc.
+
+**Want to add or swap a PDF?** Drop the new file in `media/pdfs/`, drop a 900×1200 preview PNG in `media/thumbs/` (with the matching filename), then add an entry to the `ITEMS` array in `media/index.html` and the new card auto-appears in the gallery.
+
+---
+
+## Compliance & Trust Section
+
+The home page includes a dedicated `#compliance` section with 9 credential cards covering the standard customer-trust requirements of a residential cleaning business:
+
+| Credential | What it covers |
+|---|---|
+| **General Liability Insurance** | Comprehensive coverage; COI available on request |
+| **Workers' Compensation** | PA state-compliant team coverage |
+| **Bonded** | Surety bond protecting customers and property |
+| **Background-Checked Team** | Pre-employment screening for every cleaner |
+| **Women-Owned, Locally Operated** | Wilkes-Barre based, not a franchise |
+| **Pet- & Family-Safe Products** | EPA-registered, low-VOC products |
+| **Satisfaction Guarantee** | 24-hour callback to make things right |
+| **Privacy & Confidentiality** | No third-party data sharing |
+| **On-Time, Every Time** | Punctuality policy with proactive notification |
+
+Below the cards sit a **credential bar** (compact checkmark row of all 6 top trust signals) and a **policy row** linking to:
+
+- `privacy.html` — full Privacy Policy
+- `terms.html` — Terms of Service (cancellation, payment, satisfaction guarantee, governing law)
+- `accessibility.html` — WCAG 2.1 AA accessibility statement
+- `mailto:` link to **request the Certificate of Insurance**
+
+> **A note on the credential card text:** the descriptions are written generically (e.g. "PA state compliant", "EPA-registered products"). If you want to call out specific carriers, license numbers, or certifications (e.g. "Insured by Erie Insurance, Policy #...", "PA Home Improvement Contractor #PA12345"), edit the `<span class="cred-meta">` lines in the `#compliance` section of `index.html`.
+
+---
+
+## Mobile Tab Bar (Bottom Action Bar)
+
+Five-item iOS-style tab bar visible on phones:
+
+1. **Home** — scroll to top
+2. **Services** — scroll to services section
+3. **Call** (highlighted, centered) — `tel:+15707061413`
+4. **Media** — opens the Media Hub gallery
+5. **Quote** — scroll to quote form
+
+The tab bar auto-hides on scroll-down and re-appears on scroll-up (iOS native pattern). Hidden on tablets and desktops (≥768px) where the top navigation bar takes over.
 
 ---
 

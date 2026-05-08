@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fcf7e8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1408" media="(prefers-color-scheme: dark)">
+<title>Media Hub — M&amp;M Cleanse</title>
+<meta name="description" content="Marketing collateral library for M&M Cleanse. Download print-ready PDFs for business cards, door hangers, flyers, holiday specials, and more.">
+<link rel="canonical" href="https://mmcleanse.com/media/">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon-180x180.png">
+
+<!-- Social share -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="M&amp;M Cleanse — Media Hub">
+<meta property="og:description" content="Print-ready marketing PDFs — branded, ready to share.">
+<meta property="og:url" content="https://mmcleanse.com/media/">
+<meta property="og:image" content="https://mmcleanse.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<style>
+:root{
+  --white:#fff; --cream:#fcf7e8; --ivory:#f8f3df; --pearl:#fbf9f4;
+  --gold-light:#f5e6a8; --gold-soft:#e8c547; --gold:#c99a2e;
+  --gold-deep:#a8801c; --gold-dark:#7a5816; --bronze:#5c4515;
+  --ink:#1a1408; --ink-soft:#3d3320; --muted:#8b7d5c;
+  --line:rgba(168,128,28,.18); --line-soft:rgba(168,128,28,.10);
+  --gold-gradient:linear-gradient(135deg,#f5e6a8 0%,#e8c547 30%,#c99a2e 60%,#7a5816 100%);
+  --bg-gradient:radial-gradient(circle at 20% 0%,#fffaeb 0%,#fcf7e8 35%,#f8f3df 100%);
+  --glass-strong:rgba(252,247,232,.86);
+  --shadow-soft:0 1px 2px rgba(168,128,28,.06),0 4px 16px rgba(168,128,28,.06);
+  --shadow-card:0 2px 6px rgba(168,128,28,.08),0 10px 30px rgba(168,128,28,.10);
+  --shadow-gold:0 6px 20px rgba(168,128,28,.32),0 2px 6px rgba(168,128,28,.18);
+  --r-md:14px; --r-lg:20px; --r-xl:28px; --r-full:9999px;
+  --easing:cubic-bezier(.32,.72,0,1);
+  --safe-top:env(safe-area-inset-top,0px);
+  --safe-bottom:env(safe-area-inset-bottom,0px);
+  --font-display:"Cormorant Garamond","Times New Roman",Georgia,serif;
+  --font-ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
+}
+*,::before,::after{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:var(--font-ui);color:var(--ink);background:var(--bg-gradient);background-attachment:fixed;min-height:100dvh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:var(--gold-deep);text-decoration:none;transition:color .2s var(--easing)}
+a:hover{color:var(--gold-dark)}
+::selection{background:var(--gold-soft);color:var(--ink)}
+
+/* App bar (matches main site) */
+.app-bar{position:fixed;top:0;left:0;right:0;z-index:100;padding-top:var(--safe-top);background:var(--glass-strong);-webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);border-bottom:.5px solid var(--line)}
+.app-bar-inner{max-width:1280px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand-mark{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand-mark img{width:42px;height:42px;border-radius:10px;flex-shrink:0}
+.brand-mark .brand-text{font-family:var(--font-display);font-style:italic;font-weight:700;font-size:22px;line-height:1;background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.brand-mark .brand-sub{font-family:var(--font-display);font-size:10px;letter-spacing:.18em;color:var(--gold-deep);text-transform:uppercase;margin-top:2px;display:block}
+.app-bar .home-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:var(--r-full);background:var(--gold-gradient);color:#fff;font-weight:600;font-size:14px;text-decoration:none;box-shadow:var(--shadow-gold)}
+.app-bar .home-btn:hover{color:#fff;transform:translateY(-1px)}
+@media (max-width:359px){
+  .brand-mark .brand-sub{display:none}
+  .brand-mark .brand-text{font-size:19px}
+  .app-bar .home-btn{padding:8px 12px;font-size:13px}
+  .app-bar .home-btn span{display:none}
+}
+
+/* Main */
+main{max-width:1280px;margin:0 auto;padding:calc(72px + var(--safe-top)) 22px 60px}
+
+/* Hero */
+.hero{text-align:center;padding:48px 0 32px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);padding:8px 16px;border-radius:var(--r-full);background:var(--ivory);border:.5px solid var(--line);margin-bottom:18px}
+.hero-title{font-family:var(--font-display);font-style:italic;font-size:clamp(40px,7vw,72px);line-height:1.05;font-weight:700;margin:0 0 18px;background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.01em}
+.hero-sub{font-family:var(--font-display);font-style:italic;font-size:clamp(17px,2.6vw,22px);line-height:1.5;color:var(--ink-soft);max-width:640px;margin:0 auto;font-weight:400}
+
+/* Filter pills */
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:32px 0 24px;position:sticky;top:calc(70px + var(--safe-top));background:linear-gradient(to bottom,rgba(252,247,232,.96) 0%,rgba(252,247,232,.96) 80%,rgba(252,247,232,0));backdrop-filter:blur(8px);z-index:50;margin:0 -22px;padding-left:22px;padding-right:22px}
+.filter-pill{font-size:13px;font-weight:600;color:var(--ink-soft);background:var(--white);border:.5px solid var(--line);padding:9px 16px;border-radius:var(--r-full);cursor:pointer;transition:all .2s var(--easing);-webkit-tap-highlight-color:transparent;font-family:inherit}
+.filter-pill:hover{border-color:var(--gold);color:var(--gold-dark)}
+.filter-pill.active{background:var(--gold-gradient);border-color:transparent;color:#fff;box-shadow:var(--shadow-gold)}
+.filter-pill.active:hover{color:#fff}
+
+/* Grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;padding:8px 0}
+.card{background:var(--white);border-radius:var(--r-lg);border:.5px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s var(--easing),box-shadow .3s var(--easing);box-shadow:var(--shadow-soft);position:relative}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-card);border-color:var(--gold-soft)}
+/* Uniform thumb area - all cards same height, object-fit: contain centers any aspect ratio */
+.card-thumb{aspect-ratio:4/5;background:linear-gradient(180deg,var(--cream) 0%,var(--ivory) 100%);overflow:hidden;display:flex;align-items:center;justify-content:center;border-bottom:.5px solid var(--line);padding:14px;position:relative}
+.card-thumb::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(255,255,255,.6) 0%,transparent 60%);pointer-events:none}
+.card-thumb img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 4px 14px rgba(168,128,28,.15));transition:transform .4s var(--easing);position:relative;z-index:1}
+.card:hover .card-thumb img{transform:scale(1.04)}
+
+.card-body{padding:18px 18px 14px;display:flex;flex-direction:column;gap:8px}
+.card-cat{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep)}
+.card-title{font-family:var(--font-display);font-style:italic;font-size:22px;line-height:1.15;color:var(--ink);margin:0;font-weight:700}
+.card-meta{font-size:13px;color:var(--muted);font-weight:500}
+.card-actions{display:flex;gap:8px;padding:0 18px 18px;margin-top:auto}
+.card-btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 14px;border-radius:var(--r-full);font-size:13px;font-weight:600;text-decoration:none;transition:all .2s var(--easing);-webkit-tap-highlight-color:transparent}
+.card-btn-primary{background:var(--gold-gradient);color:#fff;box-shadow:var(--shadow-gold)}
+.card-btn-primary:hover{color:#fff;transform:translateY(-1px)}
+.card-btn-secondary{background:var(--ivory);color:var(--gold-dark);border:.5px solid var(--line)}
+.card-btn-secondary:hover{background:var(--cream);color:var(--gold-dark);border-color:var(--gold)}
+.card-btn svg{width:14px;height:14px}
+
+/* Empty state */
+.empty{text-align:center;padding:80px 24px;color:var(--muted);font-family:var(--font-display);font-style:italic;font-size:18px;display:none}
+
+/* CTA bottom */
+.cta-band{margin-top:60px;text-align:center;padding:48px 24px;background:var(--white);border-radius:var(--r-xl);border:.5px solid var(--line);box-shadow:var(--shadow-soft)}
+.cta-band-title{font-family:var(--font-display);font-style:italic;font-size:clamp(28px,4vw,44px);font-weight:700;margin:0 0 12px;background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.15}
+.cta-band-sub{font-family:var(--font-display);font-style:italic;font-size:18px;color:var(--ink-soft);margin:0 0 24px}
+.cta-pill{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:var(--r-full);background:var(--gold-gradient);color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:var(--shadow-gold)}
+.cta-pill:hover{color:#fff;transform:translateY(-1px)}
+
+/* Footer */
+footer{text-align:center;padding:40px 24px;color:var(--muted);font-size:13px;border-top:.5px solid var(--line);margin-top:40px}
+footer a{color:var(--gold-deep)}
+
+@media print{.app-bar,.filters,.cta-band,.card-actions{display:none!important}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<header class="app-bar">
+  <div class="app-bar-inner">
+    <a class="brand-mark" href="../">
+      <img src="../icons/apple-touch-icon-114x114.png" alt="M&M Cleanse logo">
+      <div>
+        <div class="brand-text">M&amp;M Cleanse</div>
+        <span class="brand-sub">Media Hub</span>
+      </div>
+    </a>
+    <a class="home-btn" href="../">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+      <span>Home</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-eyebrow">Marketing Collateral · 20 Print-Ready PDFs</div>
+    <h1 class="hero-title">Branded.<br>Ready to share.</h1>
+    <p class="hero-sub">Every flyer, card, and sign you need — already designed, branded, and print-ready. Filter by what you're looking for, preview it, and download.</p>
+  </section>
+
+  <nav class="filters" aria-label="Filter by type">
+    <button class="filter-pill active" data-filter="all">All (20)</button>
+    <button class="filter-pill" data-filter="essentials">Essentials</button>
+    <button class="filter-pill" data-filter="print">Direct Mail</button>
+    <button class="filter-pill" data-filter="signs">Signs &amp; Vehicle</button>
+    <button class="filter-pill" data-filter="holidays">Holiday Specials</button>
+    <button class="filter-pill" data-filter="vertical">Vertical / B2B</button>
+  </nav>
+
+  <div class="grid" id="grid">
+    <!-- Cards injected by JS below -->
+  </div>
+
+  <p class="empty" id="empty">No items in this category.</p>
+
+  <section class="cta-band">
+    <h2 class="cta-band-title">Need something custom?</h2>
+    <p class="cta-band-sub">We can adapt any of these for a specific neighborhood, season, or partnership.</p>
+    <a class="cta-pill" href="tel:+15707061413">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call (570) 706-1413
+    </a>
+  </section>
+</main>
+
+<footer>
+  <p>M&amp;M Cleanse · Wilkes-Barre, PA · Servicing All of NEPA · <a href="../">Back to home</a></p>
+</footer>
+
+<script>
+const ITEMS = [
+  { id:"01-business-card", title:"Business Card", cat:"essentials", format:"business-card", meta:"3.5×2 in · Front + Back" },
+  { id:"02-door-hanger", title:"Door Hanger", cat:"essentials", format:"door-hanger", meta:"4×11 in · Neighborhood marketing" },
+  { id:"03-trifold-brochure", title:"Tri-Fold Brochure", cat:"essentials", format:"brochure", meta:"11×8.5 in · 2 pages, 6 panels" },
+  { id:"04-flyer-general", title:"General Flyer", cat:"essentials", format:"letter", meta:"8.5×11 in · All-purpose" },
+  { id:"05-pricing-sheet", title:"Pricing Sheet", cat:"essentials", format:"letter", meta:"8.5×11 in · Service rates" },
+  { id:"06-postcard", title:"Postcard", cat:"print", format:"postcard", meta:"6×4 in · Direct mail ready" },
+  { id:"07-referral-thank-you", title:"Referral &amp; Thank-You", cat:"print", format:"referral", meta:"5×7 in · Front + Back" },
+  { id:"08-yard-sign", title:"Yard Sign", cat:"signs", format:"yard-sign", meta:"24×18 in · For job sites" },
+  { id:"09-car-magnet", title:"Car Door Magnet", cat:"signs", format:"car-magnet", meta:"12×4 in · Vehicle branding" },
+  { id:"10-gift-certificate", title:"Gift Certificate", cat:"essentials", format:"gift-cert", meta:"8.5×3.5 in · Fillable" },
+  { id:"11-mothers-day", title:"Mother's Day Special", cat:"holidays", format:"letter", meta:"$300 whole-house clean" },
+  { id:"12-spring-cleaning", title:"Spring Cleaning", cat:"holidays", format:"letter", meta:"20% off deep cleans" },
+  { id:"13-fall-prep", title:"Fall Prep", cat:"holidays", format:"letter", meta:"$50 off first recurring" },
+  { id:"14-holiday-season", title:"Holiday Season", cat:"holidays", format:"letter", meta:"Pre-holiday deep clean" },
+  { id:"15-new-year", title:"New Year, New Home", cat:"holidays", format:"letter", meta:"First clean half off" },
+  { id:"16-valentines", title:"Valentine's Week", cat:"holidays", format:"letter", meta:"$25 off deep clean" },
+  { id:"17-realtor-partnership", title:"Realtor Partnership", cat:"vertical", format:"letter", meta:"For real estate pros" },
+  { id:"18-airbnb-host", title:"Airbnb Hosts", cat:"vertical", format:"letter", meta:"Turnover specialists" },
+  { id:"19-move-in-out", title:"Move In / Move Out", cat:"vertical", format:"letter", meta:"Deep clean for transitions" },
+  { id:"20-post-construction", title:"Post-Construction", cat:"vertical", format:"letter", meta:"For builders &amp; remodelers" },
+];
+const CAT_LABELS = {
+  essentials:"Essentials",
+  print:"Direct Mail",
+  signs:"Signs &amp; Vehicle",
+  holidays:"Holiday",
+  vertical:"Vertical"
+};
+
+const grid = document.getElementById('grid');
+const empty = document.getElementById('empty');
+
+function render(filter){
+  grid.innerHTML = '';
+  const filtered = filter === 'all' ? ITEMS : ITEMS.filter(i => i.cat === filter);
+  if (filtered.length === 0) {
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  filtered.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'card';
+    card.dataset.format = item.format;
+    card.innerHTML = `
+      <div class="card-thumb">
+        <img src="thumbs/${item.id}.png" alt="${item.title} preview" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-cat">${CAT_LABELS[item.cat]}</div>
+        <h3 class="card-title">${item.title}</h3>
+        <div class="card-meta">${item.meta}</div>
+      </div>
+      <div class="card-actions">
+        <a class="card-btn card-btn-secondary" href="pdfs/${item.id}.pdf" target="_blank" rel="noopener" aria-label="Preview ${item.title}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          Preview
+        </a>
+        <a class="card-btn card-btn-primary" href="pdfs/${item.id}.pdf" download aria-label="Download ${item.title} PDF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+      </div>`;
+    grid.appendChild(card);
+  });
+}
+
+document.querySelectorAll('.filter-pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    render(btn.dataset.filter);
+  });
+});
+
+render('all');
+
+// Register service worker (uses parent dir's worker)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js', { scope: '/' }).catch(() => {});
+  });
+}
+</script>
+
+</body>
+</html>

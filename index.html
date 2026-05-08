@@ -245,6 +245,15 @@ section{padding:clamp(60px,10vw,120px) 0;position:relative}
 .nav-links{display:none;gap:4px;align-items:center;list-style:none;margin:0;padding:0}
 .nav-links a{font-size:14px;font-weight:500;color:var(--ink-soft);padding:8px 14px;border-radius:var(--r-full);transition:all .2s var(--easing);-webkit-tap-highlight-color:transparent}
 .nav-links a:hover,.nav-links a:focus-visible{color:var(--gold-dark);background:var(--ivory)}
+
+.app-bar-actions{display:flex;align-items:center;gap:8px}
+.app-bar .media-btn{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:var(--r-full);background:var(--white);border:.5px solid var(--line);color:var(--gold-dark);text-decoration:none;transition:all .2s var(--easing);-webkit-tap-highlight-color:transparent;flex-shrink:0;position:relative}
+.app-bar .media-btn:hover{background:var(--ivory);color:var(--gold-dark);border-color:var(--gold);transform:translateY(-1px);box-shadow:var(--shadow-soft)}
+.app-bar .media-btn:active{transform:scale(.95)}
+.app-bar .media-btn svg{width:20px;height:20px}
+.app-bar .media-btn::after{content:'Media';position:absolute;bottom:-26px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:var(--r-full);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s ease}
+.app-bar .media-btn:hover::after{opacity:1}
+
 .app-bar .call-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:var(--r-full);background:var(--gold-gradient);color:#fff;font-weight:600;font-size:14px;text-decoration:none;box-shadow:var(--shadow-gold);transition:transform .18s var(--easing),box-shadow .18s var(--easing);-webkit-tap-highlight-color:transparent}
 .app-bar .call-btn:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(201,154,46,.36);color:#fff}
 .app-bar .call-btn:active{transform:scale(.97)}
@@ -254,7 +263,10 @@ section{padding:clamp(60px,10vw,120px) 0;position:relative}
   .brand-mark .brand-text{font-size:19px}
   .app-bar .call-btn{padding:8px 12px;font-size:13px}
   .app-bar .call-btn span{display:none}
-  .app-bar-inner{padding:12px 14px}
+  .app-bar .media-btn{width:38px;height:38px}
+  .app-bar .media-btn svg{width:18px;height:18px}
+  .app-bar-actions{gap:6px}
+  .app-bar-inner{padding:12px 12px}
 }
 /* Tighter nav spacing on smaller desktops */
 @media (min-width:768px) and (max-width:1023px){
@@ -441,6 +453,29 @@ section{padding:clamp(60px,10vw,120px) 0;position:relative}
 .faq-mark svg{width:14px;height:14px}
 .faq-content{padding:0 22px 20px;color:var(--ink-soft);line-height:1.6;font-size:15px}
 
+/* === Compliance / Credentials === */
+#compliance{background:linear-gradient(180deg,transparent 0%,#fcf7e8 30%,#fcf7e8 70%,transparent 100%)}
+.cred-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:8px}
+@media (min-width:540px){.cred-grid{grid-template-columns:1fr 1fr}}
+@media (min-width:880px){.cred-grid{grid-template-columns:1fr 1fr 1fr}}
+.cred{background:var(--white);border:.5px solid var(--line);border-radius:var(--r-lg);padding:22px 22px;display:flex;gap:14px;align-items:flex-start;transition:border-color .2s ease,box-shadow .2s ease,transform .2s var(--easing)}
+.cred:hover{border-color:var(--gold);box-shadow:var(--shadow-sm);transform:translateY(-2px)}
+.cred-icon{flex-shrink:0;width:42px;height:42px;border-radius:12px;background:var(--gold-gradient);display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:var(--shadow-gold)}
+.cred-icon svg{width:22px;height:22px}
+.cred-body h4{font-family:var(--font-display);font-size:17px;font-weight:600;margin:0 0 4px;color:var(--ink);letter-spacing:-.005em}
+.cred-body p{font-size:13.5px;color:var(--ink-soft);line-height:1.5;margin:0}
+.cred-body .cred-meta{display:block;margin-top:8px;font-size:11.5px;color:var(--muted);font-weight:600;letter-spacing:.06em}
+
+.cred-bar{margin-top:32px;background:var(--white);border:.5px solid var(--line);border-radius:var(--r-lg);padding:22px 26px;display:flex;flex-wrap:wrap;gap:18px 26px;align-items:center;justify-content:center;text-align:center}
+.cred-bar-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--gold-dark)}
+.cred-bar-item svg{width:18px;height:18px;color:var(--gold)}
+.cred-bar-item .sep{display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--gold-soft);margin:0 2px}
+
+.policy-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin-top:24px;font-size:13px;color:var(--muted)}
+.policy-row a{color:var(--gold-dark);font-weight:500}
+.policy-row a:hover{color:var(--bronze)}
+.policy-row .sep{color:var(--gold-soft)}
+
 /* === CTA band === */
 .cta-band{background:linear-gradient(135deg,#fff 0%,#fcf7e8 50%,#f8eec4 100%);border-radius:var(--r-xl);padding:clamp(36px,6vw,64px) clamp(24px,5vw,48px);text-align:center;border:1px solid var(--gold);position:relative;overflow:hidden;box-shadow:var(--shadow-md)}
 .cta-band::before{content:'';position:absolute;inset:8px;border:.5px solid var(--line);border-radius:calc(var(--r-xl) - 8px);pointer-events:none}
@@ -524,13 +559,25 @@ footer{background:linear-gradient(180deg,#fcf7e8 0%,#f5ebc9 100%);padding:60px 0
         <li><a href="#process">How It Works</a></li>
         <li><a href="#area">Service Area</a></li>
         <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#compliance">Trust</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="media/">Media</a></li>
       </ul>
     </nav>
-    <a href="tel:+15707061413" class="call-btn" aria-label="Call M&amp;M Cleanse at 570 706 1413">
-      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
-      <span>Call Now</span>
-    </a>
+    <div class="app-bar-actions">
+      <a href="media/" class="media-btn" aria-label="Open media library">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 3v4a2 2 0 0 0 2 2h4"/>
+          <path d="M16 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/>
+          <path d="M9 13h6"/>
+          <path d="M9 17h4"/>
+        </svg>
+      </a>
+      <a href="tel:+15707061413" class="call-btn" aria-label="Call M&amp;M Cleanse at 570 706 1413">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call Now</span>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -1041,6 +1088,142 @@ footer{background:linear-gradient(180deg,#fcf7e8 0%,#f5ebc9 100%);padding:60px 0
     </div>
   </section>
 
+  <!-- Compliance & Credentials -->
+  <section id="compliance" aria-labelledby="compliance-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Trust &amp; Credentials</div>
+        <h2 class="section-title" id="compliance-title">Vetted, insured, <em>and accountable.</em></h2>
+        <p class="section-sub">Working in your home is a privilege we take seriously. Here's the paperwork — and the practices — behind every visit.</p>
+      </div>
+
+      <div class="cred-grid reveal-stagger">
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div class="cred-body">
+            <h4>General Liability Insurance</h4>
+            <p>Comprehensive coverage in effect for every job, residential and commercial. Certificate of Insurance available on request.</p>
+            <span class="cred-meta">COI ON REQUEST</span>
+          </div>
+        </div>
+
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="cred-body">
+            <h4>Workers' Compensation</h4>
+            <p>Our team is covered, so you're never liable for an on-site injury. Period.</p>
+            <span class="cred-meta">PA STATE COMPLIANT</span>
+          </div>
+        </div>
+
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <div class="cred-body">
+            <h4>Bonded</h4>
+            <p>Surety-bonded for additional protection — every cleaner, every visit, every key handed over.</p>
+            <span class="cred-meta">FULL BUSINESS BOND</span>
+          </div>
+        </div>
+
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div class="cred-body">
+            <h4>Background-Checked Team</h4>
+            <p>Every team member undergoes a background check before they ever step into your home. Identity, references, and history verified.</p>
+            <span class="cred-meta">PRE-EMPLOYMENT SCREENING</span>
+          </div>
+        </div>
+
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div class="cred-body">
+            <h4>Women-Owned, Locally Operated</h4>
+            <p>Independently owned and operated in Wilkes-Barre, PA. Not a franchise. Not a national chain. We answer the phone.</p>
+            <span class="cred-meta">WOMEN-OWNED BUSINESS</span>
+          </div>
+        </div>
+
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L13.09 8.26 L20 9 L15 13.74 L16.18 20.5 L12 17.27 L7.82 20.5 L9 13.74 L4 9 L10.91 8.26 Z"/></svg></div>
+          <div class="cred-body">
+            <h4>Pet- &amp; Family-Safe Products</h4>
+            <p>EPA-registered, low-VOC cleaning solutions safe for kids, pets, and people with sensitivities. Specialty products available on request.</p>
+            <span class="cred-meta">EPA-REGISTERED PRODUCTS</span>
+          </div>
+        </div>
+
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+          <div class="cred-body">
+            <h4>Satisfaction Guarantee</h4>
+            <p>If something isn't right, tell us within 24 hours and we'll come back to make it right — at no charge. No drama, no fine print.</p>
+            <span class="cred-meta">24-HOUR GUARANTEE</span>
+          </div>
+        </div>
+
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+          <div class="cred-body">
+            <h4>Privacy &amp; Confidentiality</h4>
+            <p>Your information stays with us. We never share customer addresses, schedules, or personal details with third parties.</p>
+            <span class="cred-meta">CONFIDENTIALITY POLICY</span>
+          </div>
+        </div>
+
+        <div class="cred">
+          <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div class="cred-body">
+            <h4>On-Time, Every Time</h4>
+            <p>We arrive within the agreed-upon window or call you with as much notice as we can. Your time matters.</p>
+            <span class="cred-meta">PUNCTUALITY POLICY</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cred-bar reveal">
+        <div class="cred-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Insured</span>
+        </div>
+        <span class="sep"></span>
+        <div class="cred-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Bonded</span>
+        </div>
+        <span class="sep"></span>
+        <div class="cred-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Workers' Comp</span>
+        </div>
+        <span class="sep"></span>
+        <div class="cred-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Background-Checked</span>
+        </div>
+        <span class="sep"></span>
+        <div class="cred-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>EPA-Compliant</span>
+        </div>
+        <span class="sep"></span>
+        <div class="cred-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Women-Owned</span>
+        </div>
+      </div>
+
+      <div class="policy-row">
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="sep">·</span>
+        <a href="terms.html">Terms of Service</a>
+        <span class="sep">·</span>
+        <a href="accessibility.html">Accessibility Statement</a>
+        <span class="sep">·</span>
+        <a href="mailto:Mmcleanse@yahoo.com?subject=Insurance%20Certificate%20Request">Request COI</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Final CTA -->
   <section aria-labelledby="cta-title">
     <div class="container">
@@ -1093,13 +1276,14 @@ footer{background:linear-gradient(180deg,#fcf7e8 0%,#f5ebc9 100%);padding:60px 0
           <li><a href="tel:+15707061413"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>(570) 706-1413</a></li>
           <li><a href="sms:+15707061413"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text us</a></li>
           <li><a href="mailto:Mmcleanse@yahoo.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Mmcleanse@yahoo.com</a></li>
+          <li><a href="media/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Media Hub</a></li>
           <li><a href="https://www.facebook.com/profile.php?id=61555019920846" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.07C22 6.5 17.52 2 12 2S2 6.5 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.02H7.9v-2.91h2.54V9.84c0-2.51 1.5-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.91h-2.33V22c4.78-.75 8.43-4.91 8.43-9.93z"/></svg>Facebook</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <div>© <span id="year">2026</span> M&amp;M Cleanse. All rights reserved.</div>
+      <div>© <span id="year">2026</span> M&amp;M Cleanse. All rights reserved.  ·  <a href="privacy.html">Privacy</a>  ·  <a href="terms.html">Terms</a>  ·  <a href="accessibility.html">Accessibility</a></div>
       <div class="badges">
         <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Insured &amp; Bonded</span>
         <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Women-Owned</span>
@@ -1123,12 +1307,17 @@ footer{background:linear-gradient(180deg,#fcf7e8 0%,#f5ebc9 100%);padding:60px 0
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
     <span>Call</span>
   </a>
-  <a href="sms:+15707061413" aria-label="Text us">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-    <span>Text</span>
+  <a href="media/" aria-label="Media library">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 3v4a2 2 0 0 0 2 2h4"/>
+      <path d="M16 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/>
+      <path d="M9 13h6"/>
+      <path d="M9 17h4"/>
+    </svg>
+    <span>Media</span>
   </a>
   <a href="#quote" aria-label="Get a free quote">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l3 12h12l3-12"/><path d="M3 6l-1-2h2"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
     <span>Quote</span>
   </a>
 </nav>
