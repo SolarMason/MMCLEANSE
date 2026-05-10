@@ -115,7 +115,16 @@ main{max-width:1280px;margin:0 auto;padding:calc(72px + var(--safe-top)) 22px 60
 footer{text-align:center;padding:40px 24px;color:var(--muted);font-size:13px;border-top:.5px solid var(--line);margin-top:40px}
 footer a{color:var(--gold-deep)}
 
-@media print{.app-bar,.filters,.cta-band,.card-actions{display:none!important}body{background:#fff}}
+/* Tab bar (mobile) — matches main site */
+.tab-bar{position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--glass-strong);-webkit-backdrop-filter:saturate(180%) blur(28px);backdrop-filter:saturate(180%) blur(28px);border-top:.5px solid var(--line);padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-around}
+.tab-bar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;border-radius:var(--r-md);color:var(--muted);font-size:10.5px;font-weight:500;text-decoration:none;-webkit-tap-highlight-color:transparent;transition:color .2s ease,background .2s ease}
+.tab-bar a svg{width:22px;height:22px}
+.tab-bar a:hover,.tab-bar a:active,.tab-bar a[aria-current="page"]{color:var(--gold-dark);background:var(--ivory)}
+.tab-bar a.tab-cta{color:var(--gold-dark)}
+@media (min-width:768px){.tab-bar{display:none}}
+@media (max-width:767.98px){body{padding-bottom:64px}}
+
+@media print{.app-bar,.filters,.cta-band,.card-actions,.tab-bar{display:none!important}body{background:#fff}}
 </style>
 </head>
 <body>
@@ -138,13 +147,13 @@ footer a{color:var(--gold-deep)}
 
 <main>
   <section class="hero">
-    <div class="hero-eyebrow">Marketing Collateral · 20 Print-Ready PDFs</div>
+    <div class="hero-eyebrow">Marketing Collateral · 22 Print-Ready PDFs</div>
     <h1 class="hero-title">Branded.<br>Ready to share.</h1>
     <p class="hero-sub">Every flyer, card, and sign you need — already designed, branded, and print-ready. Filter by what you're looking for, preview it, and download.</p>
   </section>
 
   <nav class="filters" aria-label="Filter by type">
-    <button class="filter-pill active" data-filter="all">All (20)</button>
+    <button class="filter-pill active" data-filter="all">All (22)</button>
     <button class="filter-pill" data-filter="essentials">Essentials</button>
     <button class="filter-pill" data-filter="print">Direct Mail</button>
     <button class="filter-pill" data-filter="signs">Signs &amp; Vehicle</button>
@@ -172,6 +181,35 @@ footer a{color:var(--gold-deep)}
   <p>M&amp;M Cleanse · Wilkes-Barre, PA · Servicing All of NEPA · <a href="../">Back to home</a></p>
 </footer>
 
+<!-- Mobile-only iOS-style bottom tab bar -->
+<nav class="tab-bar" aria-label="Quick actions">
+  <a href="../" aria-label="Home">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="../#services" aria-label="Services">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    <span>Services</span>
+  </a>
+  <a href="tel:+15707061413" class="tab-cta" aria-label="Call now">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+    <span>Call</span>
+  </a>
+  <a href="./" aria-label="Media library" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 3v4a2 2 0 0 0 2 2h4"/>
+      <path d="M16 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/>
+      <path d="M9 13h6"/>
+      <path d="M9 17h4"/>
+    </svg>
+    <span>Media</span>
+  </a>
+  <a href="../#quote" aria-label="Get a free quote">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l3 12h12l3-12"/><path d="M3 6l-1-2h2"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
+    <span>Quote</span>
+  </a>
+</nav>
+
 <script>
 const ITEMS = [
   { id:"01-business-card", title:"Business Card", cat:"essentials", format:"business-card", meta:"3.5×2 in · Front + Back" },
@@ -184,8 +222,10 @@ const ITEMS = [
   { id:"08-yard-sign", title:"Yard Sign", cat:"signs", format:"yard-sign", meta:"24×18 in · For job sites" },
   { id:"09-car-magnet", title:"Car Door Magnet", cat:"signs", format:"car-magnet", meta:"12×4 in · Vehicle branding" },
   { id:"10-gift-certificate", title:"Gift Certificate", cat:"essentials", format:"gift-cert", meta:"8.5×3.5 in · Fillable" },
-  { id:"11-mothers-day", title:"Mother's Day Special", cat:"holidays", format:"letter", meta:"$300 whole-house clean" },
   { id:"12-spring-cleaning", title:"Spring Cleaning", cat:"holidays", format:"letter", meta:"20% off deep cleans" },
+  { id:"21-memorial-day-host-ready", title:"Memorial Day · Host Ready", cat:"holidays", format:"letter", meta:"$300 whole-house · cookout-ready" },
+  { id:"22-memorial-day-deep-clean", title:"Memorial Day · $50 Off", cat:"holidays", format:"letter", meta:"$50 off deep clean · alt offer" },
+  { id:"23-memorial-day-door-hanger", title:"Memorial Day · Door Hanger", cat:"holidays", format:"door-hanger", meta:"4×11 in · Neighborhood blitz" },
   { id:"13-fall-prep", title:"Fall Prep", cat:"holidays", format:"letter", meta:"$50 off first recurring" },
   { id:"14-holiday-season", title:"Holiday Season", cat:"holidays", format:"letter", meta:"Pre-holiday deep clean" },
   { id:"15-new-year", title:"New Year, New Home", cat:"holidays", format:"letter", meta:"First clean half off" },
