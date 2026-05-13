@@ -1,0 +1,48 @@
+{
+  "name": "NEPA-PRO Clean",
+  "short_name": "NEPA Clean",
+  "description": "Book professional cleaning online — recurring, deep, move-out, Airbnb, construction, clean-outs, and organizing. Insured, bonded, veteran owned. Northeast PA.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["business", "lifestyle", "utilities"],
+  "id": "nepa-pro-clean",
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Recurring cleaning",
+      "short_name": "Recurring",
+      "description": "Book recurring house cleaning",
+      "url": "/?source=shortcut#recurring",
+      "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Airbnb turnover",
+      "short_name": "Airbnb",
+      "description": "Book Airbnb / STR turnover",
+      "url": "/?source=shortcut#airbnb",
+      "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Call NEPA-PRO Clean",
+      "short_name": "Call",
+      "description": "Call 570-677-7971",
+      "url": "/?source=shortcut-call",
+      "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    { "src": "/assets/og-image.png", "sizes": "1200x630", "type": "image/png", "form_factor": "wide", "label": "NEPA-PRO Clean — book online" }
+  ]
+}

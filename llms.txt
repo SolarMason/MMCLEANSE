@@ -1,0 +1,82 @@
+# NEPA-PRO Clean
+
+> Professional cleaning service in Northeast Pennsylvania. Online booking with Stripe — recurring weekly/bi-weekly/monthly home cleaning, deep cleans, move-in/out, Airbnb turnovers, post-construction cleanup, clean-outs, and home organizing. Insured, bonded, background-checked. Veteran owned.
+
+## What we do
+
+- Recurring house cleaning (weekly, bi-weekly, monthly)
+- One-time deep cleaning
+- Move-in / move-out turnover cleaning (tenants, landlords, property managers)
+- Airbnb / short-term rental turnovers (linen change, restocking, photo-ready)
+- Post-construction / post-renovation cleanup
+- Estate and vacant property clean-outs
+- Home organizing (closets, kitchens, garages, whole-home resets)
+- Custom hourly work ($85/hr 1 cleaner, $145/hr 2 cleaners, 2 hour minimum)
+
+## Who we are
+
+NEPA-PRO Clean, a NEPA-PRO company. Based in Clarks Summit, PA. U.S. veteran owned and operated. Fully insured, bonded, and all staff background-checked.
+
+## Where we serve
+
+Northeast Pennsylvania. Zip codes 184, 185, 186, 187, 188. Cities include Clarks Summit, Scranton, Dunmore, Dickson City, Olyphant, Throop, Moosic, Old Forge, South Abington Township, Waverly, Dalton, Chinchilla, Glenburn.
+
+## Pricing (per visit, USD)
+
+### Recurring house cleaning
+
+| Home size | Bedrooms | Weekly | Bi-Weekly | Monthly |
+|---|---|---|---|---|
+| Small | Studio/1BR | $125 | $140 | $175 |
+| Medium | 2BR | $195 | $225 | $275 |
+| Large | 3BR | $275 | $315 | $375 |
+| XL | 4BR+ | $395 | $445 | $525 |
+
+### One-time services
+
+| Service | Small | Medium | Large | XL |
+|---|---|---|---|---|
+| Deep clean | $255 | $415 | $575 | $815 |
+| Move-in/out | $275 | $445 | $615 | $865 |
+| Airbnb turnover | $175 | $265 | $345 | — |
+
+### Specialty
+
+| Service | Tier | Price |
+|---|---|---|
+| Post-construction | Light / Standard / Heavy | $545 / $895 / $1,395 |
+| Clean-out | Small / Medium / Large | $445 / $895 / $1,795 |
+| Organizing | Single space / Multi-space / Whole-home | $245 / $475 / $925 |
+
+## How booking works
+
+1. Visit https://clean.nepa-pro.com
+2. Pick your service and tier (size or frequency)
+3. Tap "Book →" to complete checkout in Stripe
+4. We confirm within hours, first visit scheduled within 3–7 days
+
+Recurring subscriptions can be canceled anytime from the Stripe customer portal or by texting 570-677-7971.
+
+## Bundle discount
+
+Customers on recurring NEPA-PRO Lawn Care AND recurring NEPA-PRO Clean get 10% off their cleaning rate. Text "lawn bundle" after signup.
+
+## Contact
+
+- Phone / Text: 570-677-7971
+- Email: noel@solarmason.com
+- Hours: Monday–Saturday, 7am–7pm
+- Address: 14012 Orchard Drive, Clarks Summit, PA 18411
+- Sister: https://lawncare.nepa-pro.com (lawn care)
+
+## Common questions answered
+
+- **Service area?** Northeast Pennsylvania — Lackawanna County and surrounding NEPA region.
+- **Insured?** Yes — general liability and bonding. COI available.
+- **Contract?** No. Cancel anytime, no penalty.
+- **Do I need to be home?** No. Lockbox or door code is fine.
+- **Supplies?** We bring everything. Custom products (eco / fragrance-free / pet-safe) on request, no extra charge.
+- **Same crew every visit?** Yes, assigned route teams.
+- **Skip a visit?** Yes — text 24 hours ahead, no charge for that visit.
+- **Airbnb turnovers?** Yes — linen change, restock, QC photos.
+- **Hoarding situations?** Custom quote required, not bookable online.

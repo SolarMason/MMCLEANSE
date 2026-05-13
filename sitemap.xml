@@ -2,58 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://mmcleanse.com/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://clean.nepa-pro.com/</loc>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://mmcleanse.com/og-image.png</image:loc>
-      <image:title>M&amp;M Cleanse — Professional Cleaning Service in NEPA</image:title>
+      <image:loc>https://clean.nepa-pro.com/assets/og-image.png</image:loc>
+      <image:title>NEPA-PRO Clean</image:title>
+      <image:caption>Recurring, deep, move-out, Airbnb, construction cleaning. From $125/visit. Northeast PA.</image:caption>
     </image:image>
   </url>
-  <url>
-    <loc>https://mmcleanse.com/#services</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mmcleanse.com/#area</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mmcleanse.com/#quote</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mmcleanse.com/#compliance</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mmcleanse.com/#faq</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mmcleanse.com/media/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mmcleanse.com/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://mmcleanse.com/terms.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://mmcleanse.com/accessibility.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://clean.nepa-pro.com/#recurring</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://clean.nepa-pro.com/#deep</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://clean.nepa-pro.com/#moveout</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://clean.nepa-pro.com/#airbnb</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://clean.nepa-pro.com/#construction</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://clean.nepa-pro.com/#cleanout</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://clean.nepa-pro.com/#organizing</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
 </urlset>
